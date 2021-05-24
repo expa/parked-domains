@@ -18,11 +18,11 @@ export default function Home({host}) {
         <link href="/expa-touch.png" rel="apple-touch-icon"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content={host} property="og:title"/>
-        <meta content="Coming soon from Expa" property="og:description"/>
-        <meta content="/expa_og.png" property="og:image"/>
         <meta content={host} property="twitter:title"/>
+        <meta content="Coming soon from Expa" property="og:description"/>
         <meta content="Coming soon from Expa" property="twitter:description"/>
-        <meta content="/expa_og.png" property="twitter:image"/>
+        <meta content={`https://${host}/expa_og.png`} property="og:image"/>
+        <meta content={`https://${host}/expa_og.png`} property="twitter:image"/>
 
         {/* Google Analytics */}
         <script
