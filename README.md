@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Parked domains
 
-## Getting Started
+This is a [Next.js](https://nextjs.org/) project that displays a "Coming soon" page for parked domains. This one project can support multiple domains. The correct domain is displayed on the page, metadata and links from the server side.
 
-First, run the development server:
+![spot](https://user-images.githubusercontent.com/81450/118815014-b1af3c00-b8a8-11eb-8e44-eb6f2d1030c8.png)
+
+
+
+## Adding new domains
+
+Add new domains to the Vercel project: https://vercel.com/expa/parked-domains/settings/domains
+
+Then point the domains to Vercel's name servers.
+
+```
+ns1.vercel.com
+ns2.vercel.com
+```
+
+
+## Running locally
+
+After cloning the repositody, run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Deploy changes
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Open a PR with your changes. Vercel will automatically check for any issues and deploy to a temporary server so you can test it live.
 
-## Learn More
+Merging your PR into `main` will trigger an automatic deploy to Vercel and make changes available on all domains.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check https://vercel.com/expa/parked-domains/deployments for deploy status.
